@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#total{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height:610px;
+}
+#total div{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#scenery{
+    background-image: url("../img/Background.png");
+    width: 100%;
+    height:610px;
+}
+
+#laptop {
+    background-image: url("../img/laptop.png");
+    width: 38%;
+    height:60%;
+    bottom: -90%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    animation-name: laptop;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes laptop {
+    from {
+        bottom:-90% ;
+    }
+    to {
+      bottom:-38%;
+    }
+}
+
+
+#coffee {
+    background-image: url("../img/coffee.png");
+    width: 100px;
+    height:150px;
+    bottom: 10px;
+    right: -100px;
+    animation-name: coffee;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes coffee {
+    from {
+       right: -100px;
+    }
+    to {
+     right: 300px;
+    }
+}
+
+#html {
+    background-image: url("../img/html.png");
+    width: 200px;
+    height:200px;
+    transform: translate(100px,-200px);
+    animation-name: html;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes html {
+    from{
+        transform: translate(100px,-200px);
+    }
+ 
+    to{
+        transform: translate(100px,200px);
+    }
+}
+#css {
+    background-image: url("../img/css.png");
+    width: 150px;
+    height:200px;
+    transform: translate(550px,-200px);
+    animation-name: css;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes css {
+    from{
+        transform: translate(550px,-200px);
+    }
+ 
+    to{
+        transform: translate(550px,50px);
+    }
+}
+
+#js {
+    background-image: url("../img/js.png");
+    width: 300px;
+    height:200px;
+    transform: translate(900px,-200px);
+    animation-name: js;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes js {
+    from{
+        transform: translate(900px,-200px);
+    }
+ 
+    to{
+        transform: translate(900px,200px);
+    }
+}
+
+#s1{
+    transform: translate(520px,700px);
+    text-align: center;
+    font: 700 24px 'Hammersmith One', sans-serif; 
+    color: #2ec7d6;
+    animation-name:s1 ;
+    animation-delay: 4s;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes s1 {
+    0%{
+        transform: translate(520px,700px);
+     }
+     30% {
+        transform: translate(520px,400px);
+     }
+     50% {
+        transform: translate(520px,400px);
+     }
+
+     100%{
+        transform: translate(520px,700px);
+     }
+}
+
+#logo {
+    background-image: url("../img/logo.png");
+    width: 120px;
+    height:120px;
+    bottom: 110px;
+    right: 580px;
+    animation-name:logo ;
+    animation-delay: 10s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes logo {
+    0%{
+        opacity: 0.2;
+    }
+     25% {
+        opacity: 0.4;
+     }
+     50% {
+        opacity: 0.6;
+     }
+     75% {
+        opacity: 0.8;
+     }
+     100%{
+        opacity: 1;
+     }
+}
+
+#site{
+    transform: translate(520px,520px);
+    text-align: center;
+    font: 700 14px 'Hammersmith One', sans-serif; 
+    color: #2ec7d6;
+    animation-name:site ;
+    animation-delay: 10s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes site{
+    0%{
+        opacity: 0.2;
+    }
+     25% {
+        opacity: 0.4;
+     }
+     50% {
+        opacity: 0.6;
+     }
+     75% {
+        opacity: 0.8;
+     }
+     100%{
+        opacity: 1;
+     }
+}
